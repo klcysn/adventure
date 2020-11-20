@@ -98,25 +98,27 @@
     color:white
   }
 
-  .modal-content{
-    background-color: #242424;
+  .modal-sign{
+    background-color: rgba(24,24,24,0.7);
     position: absolute;
     top: 10%;
     right: 2%;
-    width: 20rem;
+    width: 25rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
 
     label{
-      font-weight: 100;
-      font-family: 'Modak', cursive;
+      font-weight: 600;
       font-size: 1.2rem;
+      color: rgb(209, 205, 205);
     }
 
     input{
-      width : 20rem;
+      width : 25rem;
       padding: 1rem;
       font-size: 1rem;
       border: none;
@@ -129,16 +131,17 @@
       }
 
     }
+    
 
     .btn{
-      background-color: #242424;
       color:white;
       margin: auto;
-      width: 20rem;
+      width: 25rem;
       margin-top: 1rem;
       &:hover{
         outline-offset: -5px;
         outline: 1px solid white;
+        color: #242424
       }
     }
     .forgot-link{
@@ -146,4 +149,64 @@
       color:#0026ca;
       align-self: flex-end;
     }
+  }
+
+  .modal-mobile{
+    background-color: rgba(24,24,24,0.7);
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+
+    label{
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: rgb(209, 205, 205);
+    }
+
+    input{
+      width : 15rem;
+      padding: 1rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 2px;
+      outline: none;
+      margin: auto;
+      box-sizing: border-box;
+      &:focus{
+        border: 1px dotted #242424;
+      }
+    }
+    .btn{
+      color:white;
+      margin: auto;
+      width: 15rem;
+      margin-top: 1rem;
+      &:hover{
+        outline-offset: -5px;
+        outline: 1px solid white;
+        color: #242424
+      }
+    }
+    .forgot-link{
+      text-decoration: none;
+      color:#0026ca;
+      align-self: flex-end;
+    }
+    
+  }
+
+  .overlay{
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
   }

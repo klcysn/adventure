@@ -21,6 +21,7 @@ export const Navbar = ()=>{
             setButton(false)
         }else{
             setButton(true)
+            setClick(false)
         }
     };
 
@@ -36,7 +37,7 @@ export const Navbar = ()=>{
     return(
         <div className="navbar-container">
             
-                    <Link to="/" className="nav-links" onClick={clicked} exact>
+                    <Link to="/" className="nav-links" exact>
                         <div className="navbar-logo">
                            <i className="fas fa-hat-cowboy"></i>
                         </div>
@@ -66,8 +67,8 @@ export const Navbar = ()=>{
                             isOpen={toggle}
                             onRequestClose={openModal}
                             contentLabel="sign-up"
-                            className="modal-content"
-                            overlayClassName="modal-overlay"
+                            className={button ? "modal-sign" : "modal-mobile"}
+                            overlayClassName="overlay"
                         >
                           <label>E-mail<br/>
                               <input type="e-mail" placeholder="Please enter your e-mail" autoFocus />
