@@ -97,3 +97,30 @@
     font-size: 50px;
     color:white
   }
+
+  .modal-content{
+    background-color: #242424;
+    position: absolute;
+    top: 10%;
+    left: 70%;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    label{
+      font-weight: 100;
+      font-family: 'Modak', cursive;
+      font-size: 1.2rem;
+    }
+
+    input{
+      width : 100%;
+      padding: 1rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 10px;
+      outline: none;
+    }
+  }
