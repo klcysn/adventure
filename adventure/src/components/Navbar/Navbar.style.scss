@@ -102,7 +102,7 @@
     background-color: #242424;
     position: absolute;
     top: 10%;
-    left: 70%;
+    right: 2%;
     width: 20rem;
     display: flex;
     flex-direction: column;
@@ -116,11 +116,34 @@
     }
 
     input{
-      width : 100%;
+      width : 20rem;
       padding: 1rem;
       font-size: 1rem;
       border: none;
-      border-radius: 10px;
+      border-radius: 2px;
       outline: none;
+      margin: auto;
+      box-sizing: border-box;
+      &:focus{
+        border: 1px dotted #242424;
+      }
+
+    }
+
+    .btn{
+      background-color: #242424;
+      color:white;
+      margin: auto;
+      width: 20rem;
+      margin-top: 1rem;
+      &:hover{
+        outline-offset: -5px;
+        outline: 1px solid white;
+      }
+    }
+    .forgot-link{
+      text-decoration: none;
+      color:#0026ca;
+      align-self: flex-end;
     }
   }

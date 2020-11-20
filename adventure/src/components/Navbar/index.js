@@ -10,7 +10,7 @@ Modal.setAppElement("#root");
 export const Navbar = ()=>{
     const [click, setClick] = useState(false)
     const [button, setButton] = useState(true)
-    const [toggle, setToggle] = useState(true)
+    const [toggle, setToggle] = useState(false)
 
     const openModal = ()=>{
         setToggle(s => !s)
@@ -60,12 +60,12 @@ export const Navbar = ()=>{
                                     <Link to="/products" className="nav-links">Products</Link>
                                 </li>
                             </ul>
-                            <Button buttonName={"Sign Up"} buttonStyle="btn--outline" buttonSize="btn--medium" />
+                            <Button buttonName="Sign Up" buttonStyle="btn--outline" buttonSize="btn--medium" onClick={openModal} />
                         </>}
                         <Modal
                             isOpen={toggle}
                             onRequestClose={openModal}
-                            contentLabel="My dialog"
+                            contentLabel="sign-up"
                             className="modal-content"
                             overlayClassName="modal-overlay"
                         >
@@ -75,7 +75,9 @@ export const Navbar = ()=>{
                           <label>Password<br/>
                               <input type="password" placeholder="Please enter your password" />
                           </label>
-                          <Button buttonName="Sign Up" buttonStyle="btn--outline" buttonSize="btn--large"/>
+                          <Button className="btn" buttonName="Sign Up" buttonStyle="btn--outline" buttonSize="btn--large"/>
+                          <Button className="btn" buttonName="Login" buttonStyle="btn--outline" buttonSize="btn--large"/>
+                          <a className="forgot-link" href="#">Forgot Password?</a>
                         </Modal>
                     </div>
             
