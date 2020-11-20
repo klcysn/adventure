@@ -1,6 +1,6 @@
 import './App.css';
 import {Navbar} from "./components/Navbar"
-import {Home} from "./pages/Home"
+import {Home} from "./pages/Home/Home"
 import {Switch, Route, BrowserRouter} from "react-router-dom"
 
 function App() {

@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import {Button} from "../Button"
 import "./HeroSection.style.scss"
+import {ModalToggle} from "../../pages/Home/Home"
 
 export function HeroSection(){
+    const {openModal} = useContext(ModalToggle)
     const [big, setBig]=useState(false)
     const bigger =()=>{
         if(window.innerWidth <= 960){
@@ -24,7 +26,7 @@ export function HeroSection(){
             <div className="hero-btns" style={{flexDirection: big ? "column" : "row"}}>
                 <Button className="btns" buttonName="GET STARTED" buttonStyle="btn--outline" buttonSize="btn--large" />
                 <div className="play-container">
-                    <Button className="btns" buttonName = "Watch Trailer" buttonStyle="btn--primary" buttonSize="btn--large" />
+                    <Button className="btns" buttonName = "Watch Trailer" buttonStyle="btn--primary" onClick={openModal} buttonSize="btn--large" />
                     <i class="fas fa-play-circle"></i>
                 </div>
             </div>
