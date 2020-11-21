@@ -1,7 +1,7 @@
 import React from "react"
 import "./Card.style.scss"
 
-const CARD_LIST = [
+export const CARD_LIST = [
     {title: "Sunset", img: "/images/img-1.jpg", desc: "Watch sunset"},
     {title: "Paradise", img: "/images/img-2.jpg", desc: "Travel through the Islands of Bali in a Private Cruise"},
     {title: "Ocean", img: "/images/img-3.jpg", desc: 'Set Sail in the Atlantic Ocean visiting Uncharted Waters'},
