@@ -23,6 +23,7 @@ export function HeroSection(){
     return(
         <div className="hero-container">
             <video src="/videos/video-2.mp4" autoPlay loop muted/>
+            
             <Carousel />
             <h1>ADVENTURE</h1>
             <div className="hero-btns" style={{flexDirection: big ? "column" : "row"}}>
