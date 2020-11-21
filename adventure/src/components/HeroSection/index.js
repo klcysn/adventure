@@ -24,14 +24,14 @@ export function HeroSection(){
         <div className="hero-container">
             <video src="/videos/video-2.mp4" autoPlay loop muted/>
             
-            <Carousel />
+            {!big && <Carousel />}
             <h1>ADVENTURE</h1>
             <div className="hero-btns" style={{flexDirection: big ? "column" : "row"}}>
                 <Button className="btns" buttonName="GET STARTED" buttonStyle="btn--outline" buttonSize="btn--large" />
-                <div className="play-container">
+                {!big && <div className="play-container">
                     <Button className="btns" buttonName = "Watch Trailer" buttonStyle="btn--primary" onClick={openModal} buttonSize="btn--large" />
                     <i class="fas fa-play-circle"></i>
-                </div>
+                </div>}
             </div>
         </div>
     )

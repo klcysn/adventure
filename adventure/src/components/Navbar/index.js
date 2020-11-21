@@ -39,7 +39,7 @@ export const Navbar = ()=>{
             
                     <Link to="/" className="nav-links" exact>
                         <div className="navbar-logo">
-                           <i className="fas fa-hat-cowboy"></i>
+                           <i title="Home" className="fas fa-hat-cowboy"></i>
                         </div>
                     </Link>
 
