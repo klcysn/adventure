@@ -1,0 +1,220 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbar-container {
+    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+  
+  .navbar-logo {
+    color: #fff;
+    justify-self: start;
+    margin-left: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    transition: all 2s ease-in-out;
+
+    &:hover{
+      transform: rotateZ(180deg);
+    }
+
+  }
+
+  .navbar-menu-logo{
+      position: absolute;
+      right: 20px;
+      color: white;
+  }
+
+  .nav-links{
+      text-decoration: none;
+      color:white;
+      padding: 10px;
+      transition: all 0.3s ease-in-out;
+  }
+  .nav-menu-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+  
+  }
+  .nav-menu{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    padding: 5px;
+  }
+  
+  .nav-item{
+      list-style: none;
+      font-size: 1.8rem;
+      transition: all 0.3s ease-in-out;
+   
+      &:hover{
+        //   transform: translateY(-5px);
+          border-bottom: 4px solid #fff;
+      }
+  }
+ .nav-menu-container-mobile{
+     display: flex;
+     flex-direction: column;
+     position: absolute;
+     top: 4rem;
+     right: 0;
+     background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+     padding: 4rem;
+     height: 100vh;
+     align-items: center;
+ }
+  .active{
+      flex-direction: column;
+      transition: all 3s ease-in-out;
+      width: 30vw;
+      .nav-item{
+          padding: 10px;
+          letter-spacing: 5px;
+          margin: 5px;
+          &:hover{
+              border: none;
+              background-color: white;
+          }
+        .nav-links{
+            &:hover{
+                color:#242424
+            }
+        }
+      }
+  }
+
+  .mobile-menu-icon{
+    font-size: 50px;
+    color:white
+  }
+
+  .modal-sign{
+    background-color: rgba(24,24,24,0.9);
+    position: absolute;
+    top: 10%;
+    right: 2%;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+
+    label{
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: rgb(209, 205, 205);
+    }
+
+    input{
+      width : 25rem;
+      padding: 1rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 2px;
+      outline: none;
+      margin: auto;
+      box-sizing: border-box;
+      &:focus{
+        border: 1px dotted #242424;
+      }
+
+    }
+    
+
+    .btn{
+      color:white;
+      margin: auto;
+      width: 25rem;
+      margin-top: 1rem;
+      &:hover{
+        outline-offset: -5px;
+        outline: 1px solid white;
+        color: #242424
+      }
+    }
+    .forgot-link{
+      text-decoration: none;
+      color:#0026ca;
+      align-self: flex-end;
+      &:hover{
+        color: #2f54f8;
+      }
+    }
+  }
+
+  .modal-mobile{
+    background-color: rgba(24,24,24,0.7);
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    width: 15rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+
+    label{
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: rgb(209, 205, 205);
+    }
+
+    input{
+      width : 15rem;
+      padding: 1rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 2px;
+      outline: none;
+      margin: auto;
+      box-sizing: border-box;
+      &:focus{
+        border: 1px dotted #242424;
+      }
+    }
+    .btn{
+      color:white;
+      margin: auto;
+      width: 15rem;
+      margin-top: 1rem;
+      &:hover{
+        outline-offset: -5px;
+        outline: 1px solid white;
+        color: #242424
+      }
+    }
+    .forgot-link{
+      text-decoration: none;
+      color:#0026ca;
+      align-self: flex-end;
+    }
+    
+  }
+
+  .overlay{
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
