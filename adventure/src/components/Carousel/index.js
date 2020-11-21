@@ -8,13 +8,18 @@ export const Carousel = ()=>{
     const renderCarousel = (item, i) =>{
         const setWidth = ()=>{
             if(i == carouselIndex){
-                return 600
+                return {width: 600}
             }else{
-                return 0
+                return { width: 0}
             }
         }
         return(
-            <img className="image" style={{width: setWidth()}} src={item.img} />
+            <>
+                <img className="image" style={setWidth()} src={item.img} />
+                <div className="desc-carousel" style={setWidth()}>
+                    <h3 >{item.desc}</h3>
+                </div>
+            </>
         )
     }
     const increaseIndex = ()=>{
