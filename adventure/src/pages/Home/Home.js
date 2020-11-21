@@ -11,7 +11,7 @@ export function Home(){
     }
     return(
         <>
-            <ModalToggle.Provider value={{toggle, openModal}}>
+            <ModalToggle.Provider value={{toggle, openModal, setToggle}}>
                 <HeroSection />
                 <Card />
                 <VideoModal />

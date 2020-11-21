@@ -104,7 +104,7 @@
   }
 
   .modal-sign{
-    background-color: rgba(24,24,24,0.7);
+    background-color: rgba(24,24,24,0.9);
     position: absolute;
     top: 10%;
     right: 2%;
@@ -153,6 +153,9 @@
       text-decoration: none;
       color:#0026ca;
       align-self: flex-end;
+      &:hover{
+        color: #2f54f8;
+      }
     }
   }
 
