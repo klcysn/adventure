@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import {BrowserRouter, Link} from "react-router-dom"
+import {Link} from "react-router-dom"
 import {Button} from "../Button"
 import "./Navbar.style.scss"
 

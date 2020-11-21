@@ -18,7 +18,7 @@ export const Card = () =>{
         return(
             <div className="card-container">
                 <div>
-                    <img className="image" src={item.img} />
+                    <img className="card-image" src={item.img} alt="adventure" />
                     <p className="card-banner">{item.title}</p>
                 </div>
                 <h4 className="description">{item.desc}</h4>

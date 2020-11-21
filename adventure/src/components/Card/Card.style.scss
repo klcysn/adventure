@@ -7,6 +7,7 @@
     column-gap: 5rem;
     row-gap: 3rem;
     justify-content: center;
+    background: url("./img-2.jpg") center/cover no-repeat;
 }
 .card-container{
     border: 1px solid white;
@@ -16,13 +17,14 @@
     overflow: hidden;
     box-shadow: 2px 2px 10px gray;
     cursor: pointer;
-    &:hover .image{
-        transform: scale(1.1, 1.1);
+    background-color: white;
+    &:hover .card-image{
+        transform: scale(1.1);
     }
    
 }
 
-.image{
+.card-image{
     width: 20rem;
     height: 16rem;
     transition: all 1s ease-in-out;

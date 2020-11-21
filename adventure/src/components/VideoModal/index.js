@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import "./Modal.style.scss";
 
 import Modal from "react-modal";
@@ -15,7 +15,7 @@ export function VideoModal() {
         className="modal-content"
         overlayClassName="modal-overlay"
       >
-        <iframe className="video" width="956" height="538" src="https://www.youtube.com/embed/K6rF35VGWAY?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe className="video" title="Adventure" width="956" height="538" src="https://www.youtube.com/embed/K6rF35VGWAY?autoplay=1&mute=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </Modal>
   );
 }

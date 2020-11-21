@@ -8,12 +8,14 @@
     margin-top: 3rem;
 }
 
-.image{
+.carousel-image{
     height: 100%;
-    width: 100%;
+    // width: 100%;
+    overflow: hidden;
     cursor: pointer;
+    transition: all 1s ease-in-out;
     &:hover{
-        transform: scale(1.05);
+        transform: scale(1.02);
     }
 }
 
