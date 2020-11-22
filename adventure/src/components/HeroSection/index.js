@@ -23,7 +23,7 @@ export function HeroSection(){
     return(
         <div className="hero-container">
             <video autoPlay loop muted controls>
-                <source src="/videos/video-2.mp4" type="video/mp4"/>
+                <source src="/videos/video-2.webm"/>
             </video>
             
             {!big && <Carousel />}
