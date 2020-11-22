@@ -14,12 +14,12 @@ export const Carousel = ()=>{
             }
         }
         return(
-            <>
-                <img className="carousel-image" style={setWidth()} src={item.img} alt="adventure" />
-                <div className="desc-carousel" style={setWidth()}>
-                    <h3 >{item.desc}</h3>
+            <div className="carousel-image-container">
+                <div className="carousel-inside-container" style={setWidth()}>
+                    <img className="carousel-image" src={item.img} alt="adventure" />
+                    <h3 className="desc-carousel">{item.desc}</h3>
                 </div>
-            </>
+            </div>
         )
     }
     const increaseIndex = ()=>{

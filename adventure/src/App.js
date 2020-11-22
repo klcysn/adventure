@@ -4,6 +4,7 @@ import {Home} from "./pages/Home/Home"
 import {Switch, Route, BrowserRouter} from "react-router-dom"
 import {Services} from "./pages/Services"
 import {Products} from "./pages/Products"
+import {Footer} from "./components/Footer"
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/products" component={Products} />
           <Route path="/" component={Home}/>
         </Switch>
+        <Footer />
       </BrowserRouter>
     </>
   );
