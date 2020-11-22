@@ -22,7 +22,7 @@ export function HeroSection(){
     
     return(
         <div className="hero-container">
-            {!big && <iframe className="home-background" src="https://www.youtube.com/embed/JO0_ZES0zHw?autoplay=1&mute=1&loop=1&playlist=JO0_ZES0zHw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>}
+            {!big && <iframe className="home-background" title="Home page video" src="https://www.youtube.com/embed/JO0_ZES0zHw?autoplay=1&mute=1&loop=1&playlist=JO0_ZES0zHw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope;" allowfullscreen></iframe>}
 
             {big && <img className="home-background" src="https://lp-cms-production.imgix.net/2020-07/shutterstockRF_188332622.jpg" />}
             
