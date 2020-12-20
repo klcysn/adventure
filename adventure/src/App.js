@@ -14,7 +14,7 @@ function App() {
         <Switch>
           <Route path="/services" component={Services} />
           <Route path="/products" component={Products} />
-          <Route path="/" component={Home}/>
+          <Route path="/adventure" component={Home}/>
         </Switch>
         <Footer />
       </BrowserRouter>

@@ -37,7 +37,7 @@ export const Navbar = ()=>{
     return(
         <div className="navbar-container">
             
-                    <Link to="/" className="nav-links" exact>
+                    <Link to="/adventure" className="nav-links" exact>
                         <div className="navbar-logo">
                            <i title="Home" className="fas fa-hat-cowboy"></i>
                         </div>
@@ -52,7 +52,7 @@ export const Navbar = ()=>{
                             {click && <i className="fas fa-hat-cowboy mobile-menu-icon"></i>}
                             <ul className={click ? "nav-menu active" : "nav-menu"}>
                                 <li className="nav-item" >
-                                    <Link to = "/" className="nav-links">Home</Link>
+                                    <Link to = "/adventure" className="nav-links">Home</Link>
                                 </li>
                                 <li className="nav-item" >
                                     <Link to="/services" className="nav-links">Services</Link>
